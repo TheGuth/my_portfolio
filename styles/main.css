@@ -1,0 +1,221 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #333333;
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-size: 130%;
+  color: white;
+  text-shadow: 0 0 1px #343434;
+  height: 100%;
+  margin: 0;
+}
+
+section {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+footer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* INTRO SECTION */
+
+.msg_box {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 26px;
+}
+
+.input_box {
+  font-size: 40px;
+  width: 600px;
+  height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  color: #00e3ff;
+}
+
+.typed-cursor{
+	opacity: 1;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+
+h1 {
+  font-weight: 100;
+  margin: 0;
+  margin-bottom: -20px;
+}
+
+.hi_line {
+  font-size: 27px;
+  position: relative;
+  top: 5px;
+  margin-bottom: 60px;
+}
+
+.my_name {
+  font-size: 100px;
+  text-shadow: 0 0 1px #454545;
+  position:  relative;
+  bottom: -5px;
+  color: #00b4ff;
+}
+
+#intro {
+  position: relative;
+  font-family: 'Lato', sans-serif;
+  padding: 175px 10px 185px 10px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/wood.jpg') scroll;
+  background-size: cover;
+  height: 100vh;
+  padding-left: 80px;
+}
+
+#projects {
+  position: relative;
+  font-family: 'Lato', sans-serif;
+  padding: 175px 10px 185px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/transition.jpg') scroll;
+  background-size: cover;
+}
+
+/* PROJECT NAV */
+
+.project-list {
+  position: absolute;
+  top: 35px;
+}
+
+.project-list li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.project-list li::before,
+.project-list li::after {
+  content: "\007c";
+}
+
+.project-list li:hover {
+  color: darkgray;
+  cursor: pointer;
+}
+
+/* PROJECT DISPLAY*/
+
+.project-content-display {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border-radius: 10px;
+  margin-top: -60px;
+  width: 100%;
+  text-align: center;
+  padding: 50px;
+}
+
+.project-content-display h2 {
+  padding: 20px 0 5px 20px;
+  border-bottom: .5px solid black;
+}
+
+.project-content-display h3,
+.project-content-display p {
+  text-align: left;
+}
+
+.project-tech li {
+  list-style: none;
+  display: inline-block;
+  border: 1px solid gray;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.project-content-display button {
+  margin: 25px 10px;
+  padding: 5px;
+}
+
+.project-content-display button:hover {
+  background-color: darkgray;
+}
+
+
+.back-arrow {
+  font-size: 54px;
+  color: black;
+}
+
+/* FOOTER CONTACT SECTION */
+
+.contact {
+  font-size: 42px;
+  margin-top: 80px;
+  text-align: center;
+}
+
+.fa {
+  opacity: 0.4;
+  transition: opacity 0.25s linear, text-shadow 0.25s linear;
+}
+
+.fa-envelope {
+  -webkit-transform: scale(0.9,1);
+  -moz-transform: scale(0.9,1);
+  -ms-transform: scale(0.9,1);
+  -o-transform: scale(0.9,1);
+  transform: scale(0.9,1);
+}
+
+.fa-cubes {
+  font-size: 40px;
+  -webkit-transform: scale(0.9,1);
+  -moz-transform: scale(0.9,1);
+  -ms-transform: scale(0.9,1);
+  -o-transform: scale(0.9,1);
+  transform: scale(0.9,1);
+}
+
+.icon_border {
+  height: 25px;
+  width: 7%;
+  display: inline-block;
+  border-bottom: 1px solid white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.icon_text {
+  font-size: 40px;
+  vertical-align: middle;
+  position: relative;
+  bottom: 5px;
+  padding-left: 5px;
+  transition: text-shadow 0.25s linear;
+}
+
+/**/
+
+#intro, #about, #skills, #projects {
+  width: 100%;
+}
+
+/* NAV BAR */
+
+#nav_container {
+  display: none;
+}
