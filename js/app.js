@@ -1,4 +1,5 @@
 
+
 const state = {
   currentProject: ['Cusine Quest', 'Fast Drunk', 'Dolthraki-X', 'Q-less'],
   projects: [
@@ -91,7 +92,6 @@ function initializeEventListeners(state) {
     const index = $(this).index();
     displayProject(state.projects[index]);
   });
-
 }
 
 $(function() {
