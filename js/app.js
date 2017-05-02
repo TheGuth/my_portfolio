@@ -11,7 +11,7 @@ const state = {
       image2: 'img/results-page-cuisine.png',
       challenges: "The hardest parts of this project were two fold. The first was getting yelp's api to talk to me and making sure I was authenticated for access. The second was that I had a slight delay, before rendering my page results, and had to come up with a work around.",
       github: "https://github.com/TheGuth/We-Choose-Where-to-Eat",
-      liveVersion: "",
+      liveVersion: "https://theguth.github.io/We-Choose-Where-to-Eat/",
     },
     {
       name: 'Q-less Web',
@@ -21,7 +21,7 @@ const state = {
       image2: 'img/business_dashboard_qless_web.png',
       challenges: "The hardest part of this project was the creation of a feature where a user can order a drink and have it immediately populate on the business dashboard",
       github: "https://github.com/TheGuth/bar_service_app",
-      liveVersion: "",
+      liveVersion: "https://vast-earth-24706.herokuapp.com/#/",
     },
     {
       name: 'Dolthraki-X',
@@ -31,7 +31,7 @@ const state = {
       image2: 'img/question-page-dolthraki.png',
       challenges: "The biggest challenge was implementing the spaced repetition algorithm on the server side so that we could update memory values for each question for each user, allowing for future statistical analysis of questions and how users perform on each question.",
       github: "https://github.com/Jean-Luc19/spaced-rep",
-      liveVersion: "",
+      liveVersion: "https://dothraki-x.herokuapp.com/#/",
     },
     {
       name: 'Q-less Mobile',
@@ -64,20 +64,20 @@ function displayProject(project) {
         <h3>Introduction</h3>
         <p class="project-intro-info">${project.intro}</p>
       </div>
-      <div class="project-images">
-        <img src="${project.image1}" alt="Home Page">
-        <img src="${project.image2}" alt="Main Page">
-      </div>
       <div class="project-challenges">
         <h3>Challenges</h3>
         <p class="project-challenges-info">${project.challenges}</p>
+      </div>
+      <div class="project-images">
+        <img src="${project.image1}" alt="Home Page">
+        <img src="${project.image2}" alt="Main Page">
       </div>
       <div class="project-links">
         <button>
           <a class="project-github" href="${project.github}">Github</a>
         </button>
         <button>
-          <a class="project-liveversion" href="${project.liveVersion}">Live Version</a>
+          <a class="project-liveversion" href="${project.liveVersion}">Demo</a>
         </button>
       </div>
       <a class="back-arrow" href="#projects">&#65514;<span>Back to Projects</span></a>
@@ -87,13 +87,20 @@ function displayProject(project) {
 }
 
 function initializeEventListeners(state) {
-
   $('.project-list li').on('click', function(event) {
     const index = $(this).index();
+    $('.project-list li').removeClass('currentProject');
+    $(this).addClass('currentProject');
     displayProject(state.projects[index]);
   });
 }
 
+function initialDisplay(state) {
+  $('.project-list li:first-child').addClass('currentProject');
+  displayProject(state.project[0]);
+}
+
 $(function() {
   initializeEventListeners(state);
+  initialDisplay(state);
 });

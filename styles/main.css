@@ -11,6 +11,9 @@ body {
   text-shadow: 0 0 1px #343434;
   height: 100%;
   margin: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/wood.jpg') scroll;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 section {
@@ -78,26 +81,42 @@ h1 {
   position: relative;
   font-family: 'Lato', sans-serif;
   padding: 175px 10px 185px 10px;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/wood.jpg') scroll;
-  background-size: cover;
   height: 100vh;
   padding-left: 80px;
 }
 
+/*
+increase font weight for wide paragraphs: 400
+increase line height: 1.5
+remove uncessary headers:
+remove pipes on project display list
+set background for whole project.
+Add city to intro page.
+About me section two paragraphs without headings.
+make screen shots smaller.
+or list out projects
+
+if paragraphs are smaller
+line height can be smaller
+*/
+
+
+
 #projects {
   position: relative;
   font-family: 'Lato', sans-serif;
-  padding: 175px 10px 185px;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/transition.jpg') scroll;
-  background-size: cover;
+  /*background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/transition.jpg') scroll;
+  background-size: cover;*/
 }
 
 #about {
   position: relative;
   font-family: 'Lato', sans-serif;
   padding: 50px 10px 185px;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/transition.jpg') scroll;
-  background-size: cover;
+  line-height: 1.5;
+  font-weight: 400;
+  /*background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/transition.jpg') scroll;
+  background-size: cover;*/
 }
 
 /* PROJECT NAV */
@@ -111,21 +130,23 @@ h1 {
   padding: 40px 10px;
 }
 
-.project-list li::before,
-.project-list li::after {
-  content: "\007c";
-}
-
 .project-list li:hover {
   color: darkgray;
   cursor: pointer;
 }
 
 #projects h2 {
-  text-align: center;
+  text-align: left;
+  font-weight: 100;
+  font-size: 46px;
+  padding-left: 20px;
 }
 
 /* PROJECT DISPLAY*/
+
+.currentProject {
+  color: darkgray;
+}
 
 .project-content-display {
   position: relative;
@@ -165,7 +186,7 @@ h1 {
 }
 
 .project-images img {
-  width: 85%;
+  width: 75%;
   height: 85%;
   margin-bottom: 10px;
 }
@@ -174,10 +195,6 @@ h1 {
   margin: 25px 10px;
   padding: 5px;
 }
-
-.project-content-display button:hover {
-}
-
 
 .back-arrow {
   font-size: 54px;
@@ -192,11 +209,7 @@ h1 {
 
 #about h1 {
   margin-bottom: 20px;
-}
-
-#about h2 {
-  border-bottom: .5px solid darkgray;
-  margin-right: 500px;
+  padding-left: 20px;
 }
 
 #about p {
@@ -238,12 +251,10 @@ h1 {
   height: 25px;
   width: 7%;
   display: inline-block;
-  border-bottom: 1px solid white;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .icon_text {
-  font-size: 35px;
+  font-size: 25px;
   text-align: center;
   position: relative;
   transition: text-shadow 0.25s linear;
@@ -269,7 +280,7 @@ h1 {
   display: block;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
   z-index: 100;
   background-color: rgba(0, 0, 0, 0.7);
 }
