@@ -34,12 +34,12 @@ const state = {
       tech: ['React', 'Redux', 'React-Native', 'Native-base-io', 'Nodejs', 'express', 'mongodb'],
       intro: "Continuing from the Web version we knew that most client users would be using this application from their phone. We built the app for use on both ios and android devices. The app itself features very similer user interface to the full web application. The main goal of this application is to make it easy for a user to connect to a business and order from their menu.",
       image: '',
-      challenges: '',
+      challenges: 'The main challenge with developing in react-native was just learning the differences between a mobile platform and a web one. I think the main learning curves were styling and routing through various pages, after I figured out the nuances it was smooth sailing from there on out. ',
       github: 'https://github.com/TheGuth/Q-less',
       liveVersion: "",
     },
   ]
-}
+};
 
 function techDisplay(techArray) {
   techArray.forEach((tech) => {
@@ -88,4 +88,4 @@ function initializeEventListeners(state) {
 
 $(function() {
   initializeEventListeners(state);
-})
+});

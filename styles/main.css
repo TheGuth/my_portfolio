@@ -42,6 +42,7 @@ a {
   height: 50px;
   display: inline-block;
   vertical-align: middle;
+  margin-top: 20px;
   color: #00e3ff;
 }
 
@@ -59,7 +60,7 @@ h1 {
 }
 
 .hi_line {
-  font-size: 27px;
+  font-size: 32px;
   position: relative;
   top: 5px;
   margin-bottom: 60px;
@@ -87,6 +88,14 @@ h1 {
   position: relative;
   font-family: 'Lato', sans-serif;
   padding: 175px 10px 185px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/transition.jpg') scroll;
+  background-size: cover;
+}
+
+#about {
+  position: relative;
+  font-family: 'Lato', sans-serif;
+  padding: 50px 10px 185px;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/transition.jpg') scroll;
   background-size: cover;
 }
@@ -136,6 +145,12 @@ h1 {
   text-align: left;
 }
 
+.project-content-display h3 {
+  border-bottom: 1px solid black;
+  margin-right: 470px;
+  padding-bottom: 5px;
+}
+
 .project-tech li {
   list-style: none;
   display: inline-block;
@@ -161,12 +176,28 @@ h1 {
   color: black;
 }
 
-/* FOOTER CONTACT SECTION */
+/* ABOUT ME SECTION */
 
-.contact {
-  font-size: 42px;
-  margin-top: 80px;
-  text-align: center;
+#about h1 {
+  margin-bottom: 20px;
+}
+
+#about h2 {
+  border-bottom: .5px solid darkgray;
+  margin-right: 500px;
+}
+
+#about p {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+
+/* CONTACT SECTIONS */
+
+#contact-me {
+  font-size: 24px;
+  margin-top: 40px;
+  text-align: left;
 }
 
 .fa {
@@ -200,12 +231,18 @@ h1 {
 }
 
 .icon_text {
-  font-size: 40px;
-  vertical-align: middle;
+  font-size: 35px;
+  text-align: center;
   position: relative;
-  bottom: 5px;
-  padding-left: 5px;
   transition: text-shadow 0.25s linear;
+  padding-left: 5px;
+}
+
+/* Footer Section */
+
+#contact-footer {
+  margin-top: 150px;
+  text-align: center;
 }
 
 /**/
