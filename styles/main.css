@@ -103,13 +103,12 @@ h1 {
 /* PROJECT NAV */
 
 .project-list {
-  position: absolute;
-  top: 35px;
+  text-align: center;
 }
 
 .project-list li {
   display: inline-block;
-  padding: 0 10px;
+  padding: 40px 10px;
 }
 
 .project-list li::before,
@@ -120,6 +119,10 @@ h1 {
 .project-list li:hover {
   color: darkgray;
   cursor: pointer;
+}
+
+#projects h2 {
+  text-align: center;
 }
 
 /* PROJECT DISPLAY*/
@@ -159,6 +162,12 @@ h1 {
   border-radius: 5px;
   padding: 5px;
   margin: 5px;
+}
+
+.project-images img {
+  width: 85%;
+  height: 85%;
+  margin-bottom: 10px;
 }
 
 .project-content-display button {
