@@ -176,13 +176,16 @@ h1 {
 }
 
 .project-content-display button:hover {
-  background-color: darkgray;
 }
 
 
 .back-arrow {
   font-size: 54px;
   color: black;
+}
+
+.back-arrow span {
+  display: block;
 }
 
 /* ABOUT ME SECTION */

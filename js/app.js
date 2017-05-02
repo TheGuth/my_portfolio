@@ -79,7 +79,7 @@ function displayProject(project) {
           <a class="project-liveversion" href="${project.liveVersion}">Live Version</a>
         </button>
       </div>
-      <a class="back-arrow" href="#projects">&#65514;</a>
+      <a class="back-arrow" href="#projects">&#65514;<span>Back to Projects</span></a>
     </div>`
   );
   techDisplay(project.tech);
