@@ -81,7 +81,7 @@ h1 {
 #intro {
   position: relative;
   font-family: 'Lato', sans-serif;
-  padding: 175px 10px 185px 10px;
+  padding: 175px 10px 100px 10px;
   height: 100vh;
   padding-left: 80px;
 }
@@ -294,6 +294,16 @@ line height can be smaller
   padding: 0 10px;
 }
 
+/* NAV MOBILE HEIGHT */
+
+@media (max-height: 600px) {
+  #contact-me {
+    display: none;
+  }
+}
+
+/* MOBILE MEDIA QUERY */
+
 @media (max-width: 780px) {
 
   .hi_line {
@@ -390,10 +400,6 @@ line height can be smaller
 
   /* CONTACT MOBILE */
 
-  #contact-me {
-    display: none;
-  }
-
   #contact-me,
   #contact-footer {
     font-size: 24px;
@@ -443,8 +449,4 @@ line height can be smaller
     transition: text-shadow 0.25s linear;
     padding-left: 5px;
   }
-
-
-
-
 }
