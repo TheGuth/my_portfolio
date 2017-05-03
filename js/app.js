@@ -60,18 +60,6 @@ function displayProject(project) {
       <h2 class="project-title">${project.name}</h2>
       <ul class="project-tech">
       </ul>
-      <div class="project-intro">
-        <h3>Introduction</h3>
-        <p class="project-intro-info">${project.intro}</p>
-      </div>
-      <div class="project-challenges">
-        <h3>Challenges</h3>
-        <p class="project-challenges-info">${project.challenges}</p>
-      </div>
-      <div class="project-images">
-        <img src="${project.image1}" alt="Home Page">
-        <img src="${project.image2}" alt="Main Page">
-      </div>
       <div class="project-links">
         <button>
           <a class="project-github" href="${project.github}">Github</a>
@@ -80,7 +68,16 @@ function displayProject(project) {
           <a class="project-liveversion" href="${project.liveVersion}">Demo</a>
         </button>
       </div>
-      <a class="back-arrow" href="#projects">&#65514;<span>Back to Projects</span></a>
+      <div class="project-intro">
+        <p class="project-intro-info">${project.intro}</p>
+      </div>
+      <div class="project-challenges">
+        <p class="project-challenges-info">${project.challenges}</p>
+      </div>
+      <div class="project-images">
+        <img src="${project.image1}" alt="Home Page">
+        <img src="${project.image2}" alt="Main Page">
+      </div>
     </div>`
   );
   techDisplay(project.tech);
@@ -97,7 +94,6 @@ function initializeEventListeners(state) {
 
 function initialDisplay(state) {
   $('.project-list li:first-child').addClass('currentProject');
-  displayProject(state.project[0]);
 }
 
 $(function() {

@@ -5,7 +5,7 @@
 body {
   background: #333333;
   font-family: "Lato", sans-serif;
-  font-weight: 100;
+  font-weight: 400;
   font-size: 130%;
   color: white;
   text-shadow: 0 0 1px #343434;
@@ -14,6 +14,7 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/wood.jpg') scroll;
   background-size: cover;
   background-attachment: fixed;
+  overflow-x: hidden;
 }
 
 section {
@@ -41,7 +42,7 @@ a {
 
 .input_box {
   font-size: 40px;
-  width: 600px;
+  width: 700px;
   height: 50px;
   display: inline-block;
   vertical-align: middle;
@@ -105,8 +106,6 @@ line height can be smaller
 #projects {
   position: relative;
   font-family: 'Lato', sans-serif;
-  /*background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/transition.jpg') scroll;
-  background-size: cover;*/
 }
 
 #about {
@@ -115,23 +114,23 @@ line height can be smaller
   padding: 50px 10px 185px;
   line-height: 1.5;
   font-weight: 400;
-  /*background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/transition.jpg') scroll;
-  background-size: cover;*/
 }
 
 /* PROJECT NAV */
 
 .project-list {
-  text-align: center;
+  text-align: left;
 }
 
 .project-list li {
   display: inline-block;
-  padding: 40px 10px;
+  padding: 0 10px 50px;
+  font-size: 1.4em;
+  font-weight: 400;
 }
 
 .project-list li:hover {
-  color: darkgray;
+  color: #00b4ff;
   cursor: pointer;
 }
 
@@ -145,12 +144,12 @@ line height can be smaller
 /* PROJECT DISPLAY*/
 
 .currentProject {
-  color: darkgray;
+  color: #00b4ff;
 }
 
 .project-content-display {
   position: relative;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
   color: white;
   border-radius: 10px;
   margin-top: -60px;
@@ -268,6 +267,10 @@ line height can be smaller
   text-align: center;
 }
 
+#contact-footer a {
+  padding-left: 20px;
+}
+
 /**/
 
 #intro, #about, #skills, #projects {
@@ -289,4 +292,148 @@ line height can be smaller
   list-style: none;
   display: inline-block;
   padding: 0 10px;
+}
+
+@media (max-width: 780px) {
+
+  .hi_line {
+    margin-bottom: 30px;
+  }
+
+  .msg_box {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 26px;
+  }
+
+  .input_box {
+    font-size: 20px;
+  }
+
+  #intro {
+    position: relative;
+    font-family: 'Lato', sans-serif;
+    padding: 175px 0 0 0;
+    height: 100vh;
+    padding-left: 20px;
+  }
+
+  #intro a {
+    padding-top: 20px;
+  }
+
+  #about {
+    position: relative;
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+
+  /* PROJECT NAV */
+
+  #projects h2 {
+    text-align: center;
+  }
+
+  .project-list {
+    text-align: center;
+    padding: 0;
+  }
+
+  #projects h2 {
+    padding: 0;
+  }
+
+  .project-list li {
+    display: inline-block;
+
+    font-size: 1.0em;
+    font-weight: 400;
+  }
+
+  /* PROJECT DISPLAY */
+
+  .project-content-display {
+    margin-top: -50px;
+    padding: 20px;
+    line-height: 1.5;
+  }
+
+  .project-images img {
+    width: 85%;
+  }
+
+  .project-tech {
+    padding: 0;
+  }
+
+  .project-tech li {
+    list-style: none;
+    display: inline-block;
+    width: 45%;
+    border: 1px solid gray;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+  }
+
+
+
+  /* CONTACT MOBILE */
+
+  #contact-me,
+  #contact-footer {
+    font-size: 24px;
+    margin-top: 40px;
+    text-align: left;
+  }
+
+  #contact-me a,
+  #contact-footer a {
+    display: block;
+  }
+
+  .fa {
+    opacity: 0.4;
+    transition: opacity 0.25s linear, text-shadow 0.25s linear;
+  }
+
+  .fa-envelope {
+    -webkit-transform: scale(0.9,1);
+    -moz-transform: scale(0.9,1);
+    -ms-transform: scale(0.9,1);
+    -o-transform: scale(0.9,1);
+    transform: scale(0.9,1);
+  }
+
+  .fa-cubes {
+    font-size: 20px;
+    -webkit-transform: scale(0.9,1);
+    -moz-transform: scale(0.9,1);
+    -ms-transform: scale(0.9,1);
+    -o-transform: scale(0.9,1);
+    transform: scale(0.9,1);
+  }
+
+  .icon_border {
+    height: 25px;
+    width: 7%;
+    display: inline-block;
+  }
+
+
+
+  .icon_text {
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+    transition: text-shadow 0.25s linear;
+    padding-left: 5px;
+  }
+
+
+
+
 }
