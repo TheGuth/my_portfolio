@@ -168,6 +168,11 @@ line height can be smaller
   text-align: left;
 }
 
+.project-content-display p span {
+  display: block;
+  padding-bottom: 20px;
+}
+
 .project-content-display h3 {
   border-bottom: 1px solid black;
   margin-right: 470px;
@@ -336,7 +341,7 @@ line height can be smaller
     position: relative;
     font-family: 'Lato', sans-serif;
     padding: 0;
-    line-height: 1.5;
+    line-height: 2.0;
     font-weight: 400;
   }
 
