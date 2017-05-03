@@ -36,6 +36,10 @@ a {
   color: inherit;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 /* INTRO SECTION */
 
 .msg_box {
@@ -89,23 +93,6 @@ h1 {
   height: 100vh;
   padding-left: 80px;
 }
-
-/*
-increase font weight for wide paragraphs: 400
-increase line height: 1.5
-remove uncessary headers:
-remove pipes on project display list
-set background for whole project.
-Add city to intro page.
-About me section two paragraphs without headings.
-make screen shots smaller.
-or list out projects
-
-if paragraphs are smaller
-line height can be smaller
-*/
-
-
 
 #projects {
   position: relative;
@@ -303,6 +290,11 @@ line height can be smaller
   padding: 0 10px;
 }
 
+#nav_container li:hover {
+  color: #00b4ff;
+  cursor: pointer;
+}
+
 /* NAV MOBILE HEIGHT */
 
 @media (max-height: 700px) {
@@ -311,16 +303,9 @@ line height can be smaller
   }
 }
 
-/*@media (max-height: 500px) {
-  #intro {
-    margin-bottom: 200px;
-  }
-}*/
-
 /* MOBILE MEDIA QUERY */
 
 @media (max-width: 780px) {
-
   .hi_line {
     margin-bottom: 30px;
   }
@@ -353,6 +338,13 @@ line height can be smaller
     padding: 0;
     line-height: 2.0;
     font-weight: 400;
+    font-size: 20px;
+  }
+
+  .project-content-display p {
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px;
   }
 
   /* NAV BAR */
@@ -411,13 +403,11 @@ line height can be smaller
     margin: 5px;
   }
 
-
-
   /* CONTACT MOBILE */
 
   #contact-me,
   #contact-footer {
-    font-size: 24px;
+    font-size: 20px;
     margin-top: 40px;
     text-align: left;
   }
@@ -454,8 +444,6 @@ line height can be smaller
     width: 7%;
     display: inline-block;
   }
-
-
 
   .icon_text {
     font-size: 16px;

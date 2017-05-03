@@ -1,6 +1,4 @@
 
-
-
 const state = {
   currentProject: ['Cusine Quest', 'Fast Drunk', 'Dolthraki-X', 'Q-less'],
   projects: [
@@ -17,7 +15,7 @@ const state = {
     {
       name: 'Q-less Web',
       tech: ['React', 'Redux', 'Nodejs', 'express', 'mongodb', 'HTML', 'CSS'],
-      intro: "Have you ever found yourself at a bar or club, and just not been able to get your order in? Well this app was built, because of this common problem. <span></span> The app is built on a business to client interface, so that users can connect to a business and see their menu to make orders from their phone. This app will help not only it's users, save time, but also the bartenders. The bartenders will be able to receive orders and keep track of them, this way they can increase their productivity and their tips.",
+      intro: "Have you ever found yourself at a bar or club, and just not been able to get your order in? Well this app was built exactly for this problem. <span></span> The app is built on a business to client interface, so that users can connect to a business and see their menu to make orders. This app will help not only users, but also save time and money for the business. The bartenders will be able to receive orders and keep track of them, this way they can increase their productivity and their tips.",
       image1: 'img/landing_page_qless_web.png',
       image2: 'img/business_dashboard_qless_web.png',
       challenges: "",
