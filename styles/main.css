@@ -281,7 +281,7 @@ line height can be smaller
 
 #nav_container {
   display: block;
-  position: fixed;
+  position: fixed !important;
   top: 0;
   width: 100vw;
   z-index: 100;
@@ -313,7 +313,7 @@ line height can be smaller
   #intro {
     position: relative;
     font-family: 'Lato', sans-serif;
-    padding: 175px 0 0 0;
+    padding: 100px 0 0 0;
     height: 100vh;
     padding-left: 20px;
   }
@@ -328,6 +328,13 @@ line height can be smaller
     padding: 0;
     line-height: 1.5;
     font-weight: 400;
+  }
+
+  /* NAV BAR */
+
+  #nav_container li {
+    font-size: 16px;
+    padding-left: 0;
   }
 
   /* PROJECT NAV */
@@ -382,6 +389,10 @@ line height can be smaller
 
 
   /* CONTACT MOBILE */
+
+  #contact-me {
+    display: none;
+  }
 
   #contact-me,
   #contact-footer {
