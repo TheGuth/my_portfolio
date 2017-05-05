@@ -26,7 +26,7 @@ const state = {
       webGithub: "https://github.com/TheGuth/bar_service_app",
       webLiveVersion: "https://q-less.herokuapp.com/#/",
       mobileGithub: "https://github.com/TheGuth/Q-less",
-      mobileLibeVersion: "https://appetize.io/app/b06g9gg17ceexjkcqaeckbywwm?device=iphone5s&scale=75&orientation=portrait&osVersion=9.3",
+      mobileLiveVersion: "https://appetize.io/app/b06g9gg17ceexjkcqaeckbywwm?device=iphone5s&scale=75&orientation=portrait&osVersion=9.3",
 
     },
     {
