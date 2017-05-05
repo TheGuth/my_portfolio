@@ -40,7 +40,7 @@ const state = {
       image2: 'img/cart_page_qless.png',
       challenges: '',
       github: 'https://github.com/TheGuth/Q-less',
-      liveVersion: "",
+      liveVersion: "https://appetize.io/app/b06g9gg17ceexjkcqaeckbywwm?device=iphone5s&scale=75&orientation=portrait&osVersion=9.3",
     },
   ]
 };
