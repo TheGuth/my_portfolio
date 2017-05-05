@@ -154,9 +154,12 @@ h1 {
   border-bottom: .5px solid black;
 }
 
-.project-content-display h3,
 .project-content-display p {
   text-align: left;
+}
+
+#projects .project-content-display h3 {
+  margin-right: 0;
 }
 
 .project-content-display p span {
@@ -171,6 +174,16 @@ h1 {
 }
 
 .project-tech li {
+  list-style: none;
+  display: inline-block;
+  border: 1px solid gray;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.project-tech-mobile li {
   list-style: none;
   display: inline-block;
   border: 1px solid gray;
@@ -388,11 +401,13 @@ h1 {
     width: 85%;
   }
 
-  .project-tech {
+  .project-tech,
+  .project-tech-mobile {
     padding: 0;
   }
 
-  .project-tech li {
+  .project-tech li,
+  .project-tech-mobile li {
     list-style: none;
     display: inline-block;
     width: 45%;

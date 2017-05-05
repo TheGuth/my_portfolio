@@ -13,14 +13,21 @@ const state = {
       liveVersion: "https://theguth.github.io/We-Choose-Where-to-Eat/",
     },
     {
-      name: 'Q-less Web',
-      tech: ['React', 'Redux', 'Nodejs', 'express', 'mongodb', 'HTML', 'CSS'],
+      name: 'Q-less',
+      version: 'web',
+      webTech: ['React', 'Redux', 'Nodejs', 'express', 'mongodb', 'HTML', 'CSS'],
+      mobileTech: ['React', 'Redux', 'React-Native', 'Native-base-io', 'Nodejs', 'express', 'mongodb'],
       intro: "Have you ever found yourself at a bar or club, and just not been able to get your order in? Well this app was built exactly for this problem. <span></span> The app is built on a business to client interface, so that users can connect to a business and see their menu to make orders. This app will help not only users, but also save time and money for the business. The bartenders will be able to receive orders and keep track of them, this way they can increase their productivity and their tips.",
-      image1: 'img/landing_page_qless_web.png',
-      image2: 'img/business_dashboard_qless_web.png',
+      webImage1: 'img/landing_page_qless_web.png',
+      webImage2: 'img/business_dashboard_qless_web.png',
+      mobileImage1: 'img/login_page_qless.png',
+      mobileImage2: 'img/cart_page_qless.png',
       challenges: "",
-      github: "https://github.com/TheGuth/bar_service_app",
-      liveVersion: "https://vast-earth-24706.herokuapp.com/#/",
+      webGithub: "https://github.com/TheGuth/bar_service_app",
+      webLiveVersion: "https://vast-earth-24706.herokuapp.com/#/",
+      mobileGithub: "https://github.com/TheGuth/Q-less",
+      mobileLibeVersion: "https://appetize.io/app/b06g9gg17ceexjkcqaeckbywwm?device=iphone5s&scale=75&orientation=portrait&osVersion=9.3",
+
     },
     {
       name: 'Dolthraki-X',
@@ -32,54 +39,108 @@ const state = {
       github: "https://github.com/Jean-Luc19/spaced-rep",
       liveVersion: "https://dothraki-x.herokuapp.com/#/",
     },
-    {
-      name: 'Q-less Mobile',
-      tech: ['React', 'Redux', 'React-Native', 'Native-base-io', 'Nodejs', 'express', 'mongodb'],
-      intro: "Continuing from the Web version we knew that most client users would be using this application from their phone. We built the app for use on both ios and android devices. The app itself features very similer user interface to the full web application. The main goal of this application is to make it easy for a user to connect to a business and order from their menu.",
-      image1: 'img/login_page_qless.png',
-      image2: 'img/cart_page_qless.png',
-      challenges: '',
-      github: 'https://github.com/TheGuth/Q-less',
-      liveVersion: "https://appetize.io/app/b06g9gg17ceexjkcqaeckbywwm?device=iphone5s&scale=75&orientation=portrait&osVersion=9.3",
-    },
   ]
 };
 
-function techDisplay(techArray) {
-  techArray.forEach((tech) => {
-    $('.project-tech').append(
-      `<li>${tech}</li>`
-    );
-  });
+// {
+//   name: 'Q-less',
+//   tech: ['React', 'Redux', 'React-Native', 'Native-base-io', 'Nodejs', 'express', 'mongodb'],
+//   intro: "Continuing from the Web version we knew that most client users would be using this application from their phone. We built the app for use on both ios and android devices. The app itself features very similer user interface to the full web application. The main goal of this application is to make it easy for a user to connect to a business and order from their menu.",
+//   image1: 'img/login_page_qless.png',
+//   image2: 'img/cart_page_qless.png',
+//   challenges: '',
+//   github: 'https://github.com/TheGuth/Q-less',
+//   liveVersion: "https://appetize.io/app/b06g9gg17ceexjkcqaeckbywwm?device=iphone5s&scale=75&orientation=portrait&osVersion=9.3",
+// },
+
+function techDisplay(project) {
+  if (project.tech) {
+    project.tech.forEach((tech) => {
+      $('.project-tech').append(
+        `<li>${tech}</li>`
+      );
+    });
+  } else {
+    project.webTech.forEach((tech) => {
+      $('.project-tech').append(
+        `<li>${tech}</li>`
+      );
+    });
+    project.mobileTech.forEach((tech) => {
+      $('.project-tech-mobile').append(
+        `<li>${tech}</li>`
+      );
+    });
+  }
 }
 
 function displayProject(project) {
-  $('.project-display').html(
-    `<div class="project-content-display">
-      <h2 class="project-title">${project.name}</h2>
-      <ul class="project-tech">
-      </ul>
-      <div class="project-links">
-        <button>
-          <a class="project-github" href="${project.github}">Github</a>
-        </button>
-        <button>
-          <a class="project-liveversion" href="${project.liveVersion}">Demo</a>
-        </button>
-      </div>
-      <div class="project-intro">
-        <p class="project-intro-info">${project.intro}</p>
-      </div>
-      <div class="project-challenges">
-        <p class="project-challenges-info">${project.challenges}</p>
-      </div>
-      <div class="project-images">
-        <img src="${project.image1}" alt="Home Page">
-        <img src="${project.image2}" alt="Main Page">
-      </div>
-    </div>`
-  );
-  techDisplay(project.tech);
+  if (project.name === 'Q-less') {
+    $('.project-display').html(
+      `<div class="project-content-display">
+        <h2 class="project-title">${project.name}</h2>
+        <h3>Web Version</h3>
+        <ul class="project-tech">
+        </ul>
+        <div class="project-links">
+          <button>
+            <a class="project-github" href="${project.webGithub}">Github</a>
+          </button>
+          <button>
+            <a class="project-liveversion" href="${project.webLiveVersion}">Demo</a>
+          </button>
+        </div>
+        <h3>Mobile Version</h3>
+        <ul class="project-tech-mobile">
+        </ul>
+        <div class="project-links">
+          <button>
+            <a class="project-github" href="${project.mobileGithub}">Github</a>
+          </button>
+          <button>
+            <a class="project-liveversion" href="${project.mobileLiveVersion}">Demo</a>
+          </button>
+        </div>
+        <div class="project-intro">
+          <p class="project-intro-info">${project.intro}</p>
+        </div>
+        <div class="project-images">
+          <h4>Web Images</h4>
+          <img src="${project.webImage1}" alt="Home Page">
+          <img src="${project.webImage2}" alt="Main Page">
+        </div>
+        <div class="project-images">
+          <h4>Mobile Images</h4>
+          <img src="${project.mobileImage1}" alt="Home Page">
+          <img src="${project.mobileImage2}" alt="Main Page">
+        </div>
+      </div>`
+    );
+  } else {
+    $('.project-display').html(
+      `<div class="project-content-display">
+        <h2 class="project-title">${project.name}</h2>
+        <ul class="project-tech">
+        </ul>
+        <div class="project-links">
+          <button>
+            <a class="project-github" href="${project.github}">Github</a>
+          </button>
+          <button>
+            <a class="project-liveversion" href="${project.liveVersion}">Demo</a>
+          </button>
+        </div>
+        <div class="project-intro">
+          <p class="project-intro-info">${project.intro}</p>
+        </div>
+        <div class="project-images">
+          <img src="${project.image1}" alt="Home Page">
+          <img src="${project.image2}" alt="Main Page">
+        </div>
+      </div>`
+    );
+  }
+  techDisplay(project);
 }
 
 function initializeEventListeners(state) {
