@@ -24,7 +24,7 @@ const state = {
       mobileImage2: 'img/cart_page_qless.png',
       challenges: "",
       webGithub: "https://github.com/TheGuth/bar_service_app",
-      webLiveVersion: "https://vast-earth-24706.herokuapp.com/#/",
+      webLiveVersion: "https://q-less.herokuapp.com/#/",
       mobileGithub: "https://github.com/TheGuth/Q-less",
       mobileLibeVersion: "https://appetize.io/app/b06g9gg17ceexjkcqaeckbywwm?device=iphone5s&scale=75&orientation=portrait&osVersion=9.3",
 
