@@ -17,7 +17,7 @@ const state = {
       version: 'web',
       webTech: ['React', 'Redux', 'Nodejs', 'express', 'mongodb', 'HTML', 'CSS'],
       mobileTech: ['React', 'Redux', 'React-Native', 'Native-base-io', 'Nodejs', 'express', 'mongodb'],
-      intro: "Have you ever found yourself at a bar or club and just not been able to get your order in? Well this app was built exactly for this problem. <span></span> The app is built on a business to client interface, so that users can connect to a business, and see their menu, and place an order. This app will help clients and save time and money for the business. The bartenders will be able to receive orders, keep track of them, increase their productivity, and enchance their tips.",
+      intro: "Have you ever found yourself at a bar or club and just not been able to get your order in? Well this app was made exactly for this problem. <span></span> The app is built on a business to client interface, so that users can connect to a business, see their menu, and place an order. This app will help clients and save time and money for the business. The bartenders will be able to receive orders, keep track of them, increase their productivity, and enchance their tips.",
       webImage1: 'img/landing_page_qless_web.png',
       webImage2: 'img/business_dashboard_qless_web.png',
       mobileImage1: 'img/login_page_qless.png',
