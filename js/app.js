@@ -42,17 +42,6 @@ const state = {
   ]
 };
 
-// {
-//   name: 'Q-less',
-//   tech: ['React', 'Redux', 'React-Native', 'Native-base-io', 'Nodejs', 'express', 'mongodb'],
-//   intro: "Continuing from the Web version we knew that most client users would be using this application from their phone. We built the app for use on both ios and android devices. The app itself features very similer user interface to the full web application. The main goal of this application is to make it easy for a user to connect to a business and order from their menu.",
-//   image1: 'img/login_page_qless.png',
-//   image2: 'img/cart_page_qless.png',
-//   challenges: '',
-//   github: 'https://github.com/TheGuth/Q-less',
-//   liveVersion: "https://appetize.io/app/b06g9gg17ceexjkcqaeckbywwm?device=iphone5s&scale=75&orientation=portrait&osVersion=9.3",
-// },
-
 function techDisplay(project) {
   if (project.tech) {
     project.tech.forEach((tech) => {
