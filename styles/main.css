@@ -149,6 +149,10 @@ h1 {
   padding: 50px;
 }
 
+#projects .project-title {
+  text-align: center;
+}
+
 .project-content-display h2 {
   padding: 20px 0 5px 20px;
   border-bottom: .5px solid black;
@@ -160,6 +164,7 @@ h1 {
 
 #projects .project-content-display h3 {
   margin-right: 0;
+  border-bottom: none;
 }
 
 .project-content-display p span {
