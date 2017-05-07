@@ -5,7 +5,7 @@ const state = {
     {
       name: 'Cusine Quest',
       tech: ['HTML', 'CSS', 'JavaScript', 'JQuery'],
-      intro: "This app will take a user's location, and style of food and find the 20 closest and best rated restaurants. The user then has the option to either, look through the results to pick a restaurant, or click the choose for me button, which the app randomly pick a restaurant for you to go to.",
+      intro: "This app will take a user's location and their style of food to find the 20 closest top rated restaurants. The user has the option to either look through the results and pick a restaurant or click the \"Choose for Me\" button, which randomly pick a restaurant for you.",
       image1: 'img/Home-page-cuisine.png',
       image2: 'img/results-page-cuisine.png',
       challenges: "",
